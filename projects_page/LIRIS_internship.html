@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossing in the Rain: A Multisensory VR Experience</title>
+
+    <!-- Link -->
+    <link rel="apple-touch-icon"
+          sizes="180x180"
+          href="../assets/favicon/apple-touch-icon.png" />
+    <link rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="../assets/favicon/favicon-16x16.png" />
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="../assets/favicon/favicon-32x32.png" />
+    <link rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="../assets/favicon/android-chrome-192x192.png" />
+    <link rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="../assets/favicon/android-chrome-512x512.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-details {
+            max-width: var(--width-medium);
+            margin: 8rem auto 2rem;
+            padding: 0 2rem;
+        }
+
+        .section {
+            margin: 3rem 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+
+        .section-content {
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .preview-btn {
+            display: inline-block;
+            margin: 2rem 0;
+            padding: 1rem 2rem;
+            background-color: var(--primary-color);
+            color: var(--text-color-two);
+            border-radius: 5px;
+            font-weight: var(--weight-semibold);
+            transition: 0.3s ease;
+        }
+
+            .preview-btn:hover {
+                background-color: var(--secondary-color);
+                transform: translateY(-2px);
+            }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+            font-weight: var(--weight-semibold);
+        }
+
+            .back-link:hover {
+                color: var(--primary-color);
+            }
+
+        .section-content ul {
+            list-style: disc;
+            padding-left: 2rem;
+        }
+
+            .section-content ul ul {
+                list-style: circle;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <h1 id="logo">
+                <a href="https://aswin-avj.github.io/portfolio/">
+                    <img src="../assets/logo.png" alt="Your Logo" />
+                </a>
+            </h1>
+            <!-- Navbar links -->
+            <ul class="nav-menu">
+                <!-- <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+                <li><a class="nav-link" href="#footer">CONTACT</a></li> -->
+                <!-- <li><a class="nav-link" href="#">BlOG</a></li> -->
+                <!-- <li> list items -->
+                <a class="nav-link btn btn-primary"
+                   href="../assets/resume.pdf"
+                   target="_blank">
+                    RESUME <i class="fas fa-arrow-right"></i>
+                </a>
+                </li>
+
+                <!-- Toggle switch -->
+                <div class="theme-switch">
+                    <input type="checkbox" id="switch" />
+                    <label class="toggle-icons" for="switch">
+                        <img class="moon" src="../assets/moon.svg" />
+                        <img class="sun" src="../assets/sun.svg" />
+                    </label>
+                </div>
+                <!-- Hamburger menu -->
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <main class="project-details">
+        <a href="../index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Projects
+        </a>
+
+
+        <h1>Crossing in the Rain: A Multisensory VR Experience</h1>
+        <!--<a href="color_space/index.html" target="_blank" class="btn btn-primary">Preview Project</a> <a href="https://github.com/Aswin-avj/color_cloud_visualization" target="_blank" class="btn btn-secondary">View Code</a>-->
+
+
+        <section class="section" id="what">
+            <h2 class="section-title">What</h2>
+            <div class="section-content">
+                <p>I worked at LIRIS (Laboratoire d'InfoRmatique en Image et Systemes d'information) as a summer intern, focusing on immersive feedback systems in VR. My contributions extended the 6DoF VR Thermal Feedback system (originally presented at IEEE VR 2025) and integrated additional haptic modalities such as the Skinitic Haptic Vest with custom-designed feedback patterns.</p>
+            </div>
+        </section>
+        <hr />
+
+        <section class="section" id="how">
+            <h2 class="section-title">How</h2>
+            <div class="section-content">
+                <ul>
+                    <li>
+                        <strong>Extended 6DoF VR Thermal Feedback <a style="color: yellowgreen;" href="https://github.com/liris-xr/6dof-vr-thermal-feedback/tree/add_object_awareness" target="_blank">(Click to View Github Repository)</a></strong>
+                        <ul>
+                            <li>Added obstacle awareness with raycasting and collision detection, enabling thermal feedback to dynamically adapt when objects block the heat source.</li>
+                            <li>Introduced new materials (green/red/transparent) to make feedback more intuitive for developers.</li>
+                            <li>Improved the demo scene with teleport areas and hit-feedback visualization.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Haptic Integration with Haptic Vest</strong>
+                        <ul>
+                            <li>Integrated the Skinitic Haptic Vest into the VR scenario for vibrotactile feedback.</li>
+                            <li>
+                                Designed custom haptic patterns to match gameplay events:
+                                <ul>
+                                    <li>Rain simulation with distributed pulses across the torso.</li>
+                                    <li>Vehicle close-passes with lateral vibrations.</li>
+                                    <li>Rain collision feedback with sharp impact pulses.</li>
+                                </ul>
+                            </li>
+                            <li>Combined thermal + vibrotactile + audio to create a multi-sensory XR experience.</li>
+                        </ul>
+                    </li>
+                    <li>
+
+                        <strong>Audio Integration</strong>
+                        <ul>
+                            <li>Integrated the <em>ASIO Audio Manager <a style="color: yellowgreen;" href="https://github.com/liris-xr/AsioAudioUnity" target="_blank">(Click to View Github Repository)</a></em> (a Unity plugin developed by the LIRIS XR Lab) to enable spatialized audio in VR scenarios.</li>
+                            <li>Linked spatialized sound cues with gameplay events such as thunder, vehicle movement, and collisions to enhance immersion.</li>
+                        </ul>
+                    </li>
+                    <li>
+
+                        <strong>Prototyped Interactive VR Demo</strong>
+                        <ul>
+                            <li>Built a city road-crossing scenario with rain, vehicles, etc.</li>
+                            <li>Linked thermal lamps, fans, haptic vest, and spatialized audio to narrative events for realism and tension.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr />
+
+        <section class="section" id="results">
+            <h2 class="section-title">Results</h2>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Enhanced Research Tool:</strong> The 6DoF VR Thermal Feedback System now supports obstacle-aware interactions, improving realism beyond the IEEE VR 2025 version.</li>
+                    <li><strong>New Haptic Dimension:</strong> Successfully integrated the Skinitic Vest with custom-designed feedback patterns, showing how vibrotactile cues can complement thermal sensations.</li>
+                    <li><strong>Immersive XR Experience:</strong> Delivered a multi-modal VR demo combining thermal, vibrotactile, and audio feedback in an engaging road-crossing game.</li>
+                    <li><strong>Open Contribution:</strong> My improvements were added to the open-source repository, enabling other researchers to build on a richer, developer-friendly framework.</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!--<a href="color_space/index.html" target="_blank" class="btn btn-primary">Preview Project</a> <a href="https://github.com/Aswin-avj/color_cloud_visualization" target="_blank" class="btn btn-secondary">View Code</a>-->
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
