@@ -148,59 +148,60 @@
               > Back to Projects</a>
         
 
-<section class="section" id="f2b-lighting-transfer">
-  <h1>Face to Ball– Lighting Transfer Using Deep Learning (Using Synthetic Dataset)</h1>
-           <a href="https://github.com/yamakiyamaki/DL_project" target="_blank" class="btn btn-secondary">View Code</a>
+        <section class="section" id="f2b-lighting-transfer">
+            <h1>Face to Ball– Lighting Transfer Using Deep Learning (Using Synthetic Dataset)</h1>
+            <a href="face_to_ball_final_presentation.pdf" target="_blank" class="btn btn-primary">View Report</a> <a href="https://github.com/yamakiyamaki/DL_project" target="_blank" class="btn btn-secondary">View Code</a>
 
-  <section class="section" id="what-f2b">
-    <h2 class="section-title">What</h2>
-    <div class="section-content">
-      <p>
-        We built a deep learning pipeline that captures and transfers lighting effects from human facial images onto gray ball images, mimicking how light interacts with human faces. The goal was to generate a synthetic dataset and train a model capable of learning lighting patterns to realistically recreate them on a grey ball.
-      </p>
-    </div>
-  </section>
-  <hr />
+            <section class="section" id="what-f2b">
+                <h2 class="section-title">What</h2>
+                <div class="section-content">
+                    <p>
+                        We built a deep learning pipeline that captures and transfers lighting effects from human facial images onto gray ball images, mimicking how light interacts with human faces. The goal was to generate a synthetic dataset and train a model capable of learning lighting patterns to realistically recreate them on a grey ball.
+                    </p>
+                </div>
+            </section>
+            <hr />
 
-  <section class="section" id="how-f2b">
-    <h2 class="section-title">How</h2>
-    <div class="section-content">
-      <strong>Dataset Creation</strong>
-      <ul>
-        <li>Generated a synthetic dataset of 1,600 image sets (face and corresponding ball) using tools like FaceBuilder, Sketchfab, and TRELLIS.</li>
-        <li>Covered 16 identities under 100 unique lighting and angle conditions.</li>
-      </ul>
-      <strong>Model Architecture</strong>
-      <ul>
-        <li>Explored U-Net and GANs; implemented a ResNet34-based U-Net.</li>
-        <li>Experimented with two training regimes:
-          <ul>
-            <li>Freezing encoder + training decoder.</li>
-            <li>Training both encoder and decoder.</li>
-          </ul>
-        </li>
-      </ul>
-      <strong>Training</strong>
-      <ul>
-        <li>Used a hybrid loss: <code>0.5 × MSE + 0.5 × (1 - SSIM)</code></li>
-        <li>Used <code>L1</code> loss</li>
-        <li>Trained over 500 epochs with batch size 50 and learning rate between 1e-4 to 1e-5.</li>
-      </ul>
-    </div>
-  </section>
-  <hr />
+            <section class="section" id="how-f2b">
+                <h2 class="section-title">How</h2>
+                <div class="section-content">
+                    <strong>Dataset Creation</strong>
+                    <ul>
+                        <li>Generated a synthetic dataset of 1,600 image sets (face and corresponding ball) using tools like FaceBuilder, Sketchfab, and TRELLIS.</li>
+                        <li>Covered 16 identities under 100 unique lighting and angle conditions.</li>
+                    </ul>
+                    <strong>Model Architecture</strong>
+                    <ul>
+                        <li>Explored U-Net and GANs; implemented a ResNet34-based U-Net.</li>
+                        <li>
+                            Experimented with two training regimes:
+                            <ul>
+                                <li>Freezing encoder + training decoder.</li>
+                                <li>Training both encoder and decoder.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <strong>Training</strong>
+                    <ul>
+                        <li>Used a hybrid loss: <code>0.5 × MSE + 0.5 × (1 - SSIM)</code></li>
+                        <li>Used <code>L1</code> loss</li>
+                        <li>Trained over 500 epochs with batch size 50 and learning rate between 1e-4 to 1e-5.</li>
+                    </ul>
+                </div>
+            </section>
+            <hr />
 
-  <section class="section" id="results-f2b">
-    <h2 class="section-title">Results</h2>
-    <div class="section-content">
-      <ul>
-        <li>The model learned to realistically transfer lighting from a face image to a gray ball image.</li>
-        <li>Even though trained on synthetic data, it was successful in transfering light from real faces too.</li>
-        <li>Demonstrated potential for applications in relighting, synthetic data generation, and 3D rendering.</li>
-      </ul>
-    </div>
-  </section>
-</section>
+            <section class="section" id="results-f2b">
+                <h2 class="section-title">Results</h2>
+                <div class="section-content">
+                    <ul>
+                        <li>The model learned to realistically transfer lighting from a face image to a gray ball image.</li>
+                        <li>Even though trained on synthetic data, it was successful in transfering light from real faces too.</li>
+                        <li>Demonstrated potential for applications in relighting, synthetic data generation, and 3D rendering.</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
 <hr />
 <h2>Contributors</h2> 
