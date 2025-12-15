@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Plank Experiment</title>
+
+<!-- Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../../assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="../../assets/favicon/android-chrome-512x512.png"
+    />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon/favicon.ico" />
+    <link rel="manifest" href="../../assets/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-details {
+            max-width: var(--width-medium);
+            margin: 8rem auto 2rem;
+            padding: 0 2rem;
+        }
+
+        .section {
+            margin: 3rem 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+
+        .section-content {
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .preview-btn {
+            display: inline-block;
+            margin: 2rem 0;
+            padding: 1rem 2rem;
+            background-color: var(--primary-color);
+            color: var(--text-color-two);
+            border-radius: 5px;
+            font-weight: var(--weight-semibold);
+            transition: 0.3s ease;
+        }
+
+        .preview-btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+            font-weight: var(--weight-semibold);
+        }
+
+        .back-link:hover {
+            color: var(--primary-color);
+        }
+
+        .section-content ul {
+            list-style: disc;
+            padding-left: 2rem;
+        }
+
+        .section-content ul ul {
+            list-style: circle;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="https://aswin-avj.github.io/portfolio/"
+              ><img src="../../assets/logo.png" alt="Your Logo"
+            /></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <!-- <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-link" href="#footer">CONTACT</a></li> -->
+            <!-- <li><a class="nav-link" href="#">BlOG</a></li> -->
+            <!-- <li> list items -->
+              <a
+                class="nav-link btn btn-primary"
+                href="../../assets/resume.pdf"
+                target="_blank"
+                >RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="../../assets/moon.svg" />
+                <img class="sun" src="../../assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+ <main class="project-details">
+    <a href="../../index.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+    </a>
+
+    <h1>The Plank Experiment</h1>
+    <!-- Optional links -->
+    <!-- <a href="#" target="_blank" class="btn btn-primary">Preview Project</a> -->
+    <!-- <a href="#" target="_blank" class="btn btn-secondary">View Code</a> -->
+
+    <section class="section" id="video">
+  <div class="section-content">
+    <iframe src="https://www.youtube.com/embed/GXSZ3nlOJEQ?autoplay=1&loop=1&playlist=GXSZ3nlOJEQ&mute=1" width="560" height="315" title="The Plank Experiment: Demo" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+
+    <section class="section" id="what">
+        <h2 class="section-title">What</h2>
+        <div class="section-content">
+            <p>
+                The Plank Experiment is an XR perception study that investigates how physical realism influences
+                height perception and fear responses in virtual reality.
+            </p>
+            <p>
+                Inspired by prior research showing that virtual heights can elicit strong fear reactions, this
+                project compares the use of a real physical plank with a purely virtual plank to understand
+                their impact on immersion and perception.
+            </p>
+            <ul>
+                <li>Examine how physical props affect perceived height in VR.</li>
+                <li>Compare real-world interaction versus fully virtual interaction.</li>
+                <li>Study immersion, embodiment, and behavioral responses in XR.</li>
+            </ul>
+            I was responsible for creating the VR interactions and experimental framework using Unity and C#.
+        </div>
+    </section>
+
+    <hr />
+
+    <section class="section" id="how">
+        <h2 class="section-title">How</h2>
+        <div class="section-content">
+            <p><strong>Environment & Setup:</strong></p>
+            <ul>
+                <li>Developed a high-rise city VR environment using Unity.</li>
+                <li>Included an elevator and plank scenario to simulate height exposure.</li>
+            </ul>
+
+            <p><strong>Experimental Conditions:</strong></p>
+            <ul>
+                <li><strong>Real Plank:</strong> Participants walked on a physical wooden plank placed on the floor.</li>
+                <li><strong>Virtual Plank:</strong> Participants walked on the floor while seeing only a virtual plank.</li>
+            </ul>
+
+            <p><strong>Procedure:</strong></p>
+            <ul>
+                <li>Five randomized height levels to reduce expectation bias.</li>
+                <li>Four trials per height level and condition (40 trials per participant).</li>
+                <li>Participants reported perceived height after each trial.</li>
+            </ul>
+
+            <p><strong>Data Collection:</strong></p>
+            <ul>
+                <li>Subjective height judgments.</li>
+                <li>Time to and from the plank were measured.</li>
+                <li>Post-experiment interviews for qualitative feedback.</li>
+            </ul>
+        </div>
+    </section>
+
+    <hr />
+
+    <section class="section" id="results">
+        <h2 class="section-title">Results</h2>
+        <div class="section-content">
+            <ul>
+                <li>
+                    <strong>Height Perception:</strong>
+                    In two participants, the real plank lowered the Point of Subjective Equality (PSE),
+                    indicating a stronger sense of height at the same virtual level.
+                </li>
+                <li>
+                    <strong>Behavioral Effects:</strong>
+                    Time taken to return to the elevator increased for all participants in the real plank
+                    condition, suggesting more cautious movement and stronger embodiment.
+                </li>
+                <li>
+                    <strong>Qualitative Insights:</strong>
+                    Participants reported increased realism due to physical edges, tactile feedback, and
+                    slight instability of the real plank.
+                </li>
+                <li>
+                    <strong>Limitations:</strong>
+                    <ul>
+                        <li>Small sample size limits generalizability.</li>
+                        <li>Participants reported that the lack of seeing once feet on the plank can reduce the immesion especially on the virtual only plank setup. So, future work should also focus on tracing the feet. </li>
+                        <li>Future studies could explore additional sensory feedback (e.g., wind, sound) to enhance realism.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <hr />
+
+    <h2>Contributors</h2>
+    <ul>
+        <li>ASWIN VATTAPPARAMBATHU JAYAPRAKASH</li>
+        <li>HARUKA NAGAO</li>
+        <li>POL STURLESE RUIZ</li>
+        <li>YUYA HAGA</li>
+    </ul>
+
+</main>
+
+<script src="../../js/script.js"></script>
+
+</body>
+</html>
